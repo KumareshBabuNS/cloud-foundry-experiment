@@ -21,13 +21,36 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:rabbit="http://www.springframework.org/schema/rabbit"
        xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:cloud="http://schema.cloudfoundry.org/spring"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://schema.cloudfoundry.org/spring http://schema.cloudfoundry.org/spring/cloudfoundry-spring.xsd
                            http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd
                            http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <beans profile="local">
+    <beans profile="default">
     </beans>
     <beans profile="cloud">
+        <cloud:data-source id="dataSource">
+            <cloud:connection properties="charset=utf-8"/>
+            <cloud:pool pool-size="5" max-wait-time="2000"/>
+        </cloud:data-source>
+
+        <cloud:mongo-db-factory id="mongoDbFactory" write-concern="NORMAL">
+            <cloud:mongo-options connections-per-host="10" max-wait-time="2000"/>
+        </cloud:mongo-db-factory>
+
+        <cloud:redis-connection-factory id="redisConnectionFactory">
+            <cloud:pool pool-size="5" max-wait-time="2000"/>
+        </cloud:redis-connection-factory>
+
+        <cloud:rabbit-connection-factory id="rabbitConnectionFactory">
+            <cloud:rabbit-options channel-cache-size="10"/>
+        </cloud:rabbit-connection-factory>
+
+        <cloud:service-scan/>
+
+        <cloud:properties id="cloudProperties" />
+        <context:property-placeholder properties-ref="cloudProperties" />
     </beans>
 
     <beans>
