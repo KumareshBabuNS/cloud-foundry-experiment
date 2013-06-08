@@ -36,7 +36,7 @@ class RootController {
 
     @RequestMapping( method = RequestMethod.GET )
     @ResponseBody
-    DiscoverableResources listResources() {
+    DiscoverableResources discover() {
         DiscoverableResources resource = new DiscoverableResources()
         resource.add( linkTo( EnvironmentController.class ).withRel( 'environment' ) )
         resource

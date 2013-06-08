@@ -20,6 +20,7 @@ import org.springframework.hateoas.ExposesResourceFor
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.ResponseBody
 
 /**
  * The root of the HATEAOS discovery system.
@@ -32,7 +33,8 @@ class EnvironmentController {
     private final EnvironmentResourceAssembler theAssembler = new EnvironmentResourceAssembler()
 
     @RequestMapping( method = RequestMethod.GET )
-    EnvironmentResource list() {
+    @ResponseBody
+    EnvironmentResource discover() {
         def environment = new Environment( id: 1, cloudfoundry: false )
         theAssembler.toResource(environment)
     }
