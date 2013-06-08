@@ -17,16 +17,27 @@
 
 package org.kurron.spring
 
+import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.annotation.ImportResource
+import org.springframework.hateoas.config.EnableHypermediaSupport
+import org.springframework.http.MediaType
+import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer
 import org.springframework.web.servlet.config.annotation.EnableWebMvc
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport
 
 /**
  * Beans that are shared with the web context.
  */
 @Configuration
 @EnableWebMvc
-//@ComponentScan( basePackages = ['org.kurron.user.adapter.rest', 'org.kurron.root.adapter.rest'] )
+@EnableHypermediaSupport
+@ComponentScan( basePackages = ['org.kurron.root'] )
 @ImportResource( 'classpath:META-INF/spring/application-context.xml' )
-class ApplicationContext {
+class ApplicationContext extends WebMvcConfigurationSupport {
+
+    @Override
+    protected void configureContentNegotiation(ContentNegotiationConfigurer configurer) {
+        configurer.defaultContentType( MediaType.APPLICATION_JSON )
+    }
 }

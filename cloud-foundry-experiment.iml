@@ -61,6 +61,7 @@
     <orderEntry type="library" exported="" name="logback-core-1.0.12" level="project" />
     <orderEntry type="library" exported="" name="cal10n-api-0.7.4" level="project" />
     <orderEntry type="library" exported="" name="spring-plugin-core-0.8.0.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="servlet-api-2.5" level="project" />
   </component>
 </module>
 
