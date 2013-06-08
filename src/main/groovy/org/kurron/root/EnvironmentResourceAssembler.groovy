@@ -29,6 +29,6 @@ class EnvironmentResourceAssembler extends ResourceAssemblerSupport<Environment,
 
     @Override
     EnvironmentResource toResource(Environment entity) {
-        createResourceWithId( entity.id, entity )
+        createResourceWithId( 1, entity )
     }
 }

@@ -16,10 +16,14 @@
 
 package org.kurron.root
 
+import org.springframework.hateoas.Link
 import org.springframework.hateoas.Resource
 
 /**
  * REST view of the Environment.
  */
 class EnvironmentResource extends Resource<Environment> {
+    EnvironmentResource(Environment content, Link... links) {
+        super(content, links)
+    }
 }

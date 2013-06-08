@@ -56,5 +56,6 @@
     </beans>
 
     <beans>
+        <bean id="cloudEnvironment" class="org.kurron.root.Environment"/>
     </beans>
 </beans>

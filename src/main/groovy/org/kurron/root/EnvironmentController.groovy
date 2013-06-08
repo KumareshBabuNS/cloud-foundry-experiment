@@ -16,6 +16,7 @@
 
 package org.kurron.root
 
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.hateoas.ExposesResourceFor
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
@@ -31,11 +32,17 @@ import org.springframework.web.bind.annotation.ResponseBody
 class EnvironmentController {
 
     private final EnvironmentResourceAssembler theAssembler = new EnvironmentResourceAssembler()
+    private final Environment environment
+
+    @Autowired
+    EnvironmentController(  Environment environment) {
+        this.environment = environment
+    }
 
     @RequestMapping( method = RequestMethod.GET )
     @ResponseBody
     EnvironmentResource discover() {
-        def environment = new Environment( id: 1, cloudfoundry: false )
-        theAssembler.toResource(environment)
+        EnvironmentResource resource = new EnvironmentResource( environment )
+        return resource
     }
 }

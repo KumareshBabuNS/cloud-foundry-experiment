@@ -17,21 +17,45 @@
 package org.kurron.root
 
 import groovy.transform.TupleConstructor
+import org.springframework.beans.factory.annotation.Value
 import org.springframework.hateoas.Identifiable
 
 /**
  * Model of the runtime environment.
  */
 @TupleConstructor
-class Environment implements Identifiable<Long> {
+class Environment {
 
-    /**
-     * Still haven't figured out if this is useful or not.s
-     */
-    Long id
+    @Value('${cloud.application.name}')
+    String applicationName
 
-    /**
-     * True if we're running inside a Cloud Foundry environment.
-     */
-    boolean cloudfoundry
+    @Value('${cloud.provider.url}')
+    String providerURL
+
+    @Value('${cloud.services.mongodb.connection.db}')
+    String mongoConnectionDB
+
+    @Value('${cloud.services.mongodb.connection.host}')
+    String mongoConnectionHost
+
+    @Value('${cloud.services.mongodb.connection.hostname}')
+    String mongoConnectionHostname
+
+    @Value('${cloud.services.mongodb.connection.name}')
+    String mongoConnectionName
+
+    @Value('${cloud.services.mongodb.connection.password}')
+    String mongoConnectionPassword
+
+    @Value('${cloud.services.mongodb.connection.port}')
+    String mongoConnectionPort
+
+    @Value('${cloud.services.mongodb.connection.username}')
+    String mongoConnectionUsername
+
+    @Value('${cloud.services.mongodb.plan}')
+    String mongoPlan
+
+    @Value('${cloud.services.mongodb.type}')
+    String mongoType
 }
