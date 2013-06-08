@@ -28,7 +28,9 @@
                            http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <beans profile="default">
+        <context:property-placeholder location="classpath:/META-INF/spring/default.properties" system-properties-mode="OVERRIDE"/>
     </beans>
+
     <beans profile="cloud">
         <cloud:data-source id="dataSource">
             <cloud:connection properties="charset=utf-8"/>
