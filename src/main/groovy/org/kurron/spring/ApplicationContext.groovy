@@ -27,6 +27,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc
 @Configuration
 @EnableWebMvc
 //@ComponentScan( basePackages = ['org.kurron.user.adapter.rest', 'org.kurron.root.adapter.rest'] )
-@ImportResource( 'classpath:META-INF/springs/application-context.xml' )
+@ImportResource( 'classpath:META-INF/spring/application-context.xml' )
 class ApplicationContext {
 }

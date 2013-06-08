@@ -6,6 +6,7 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="javaee-facet-classes" facet="cloud-foundry-experiment/web/Web" />
+          <element id="module-output" name="cloud-foundry-experiment" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="json-path-0.8.1" />
