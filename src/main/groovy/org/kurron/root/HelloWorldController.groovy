@@ -31,6 +31,6 @@ class HelloWorldController {
     @RequestMapping( method = RequestMethod.GET, produces = 'text/plain' )
     @ResponseBody
     String helloWorld() {
-        'Hello, world!'
+        "Hello, world! Your winning number is ${System.currentTimeMillis()}"
     }
 }
