@@ -34,7 +34,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="jul-to-slf4j-1.7.5" level="project" />
     <orderEntry type="library" exported="" name="slf4j-ext-1.7.5" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="json-path-0.8.1" level="project" />
     <orderEntry type="library" exported="" name="logback-classic-1.0.12" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="jackson-annotations-2.2.1" level="project" />
     <orderEntry type="library" exported="" name="spring-core-3.2.3.RELEASE" level="project" />
@@ -49,19 +48,17 @@
     <orderEntry type="library" exported="" name="spring-web-3.2.3.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="groovy-all-2.1.4" level="project" />
     <orderEntry type="library" exported="" name="slf4j-api-1.7.5" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="commons-lang-2.6" level="project" />
     <orderEntry type="library" exported="" name="aopalliance-1.0" level="project" />
     <orderEntry type="library" exported="" name="cal10n-api-0.7.4" level="project" />
     <orderEntry type="library" scope="TEST" name="spring-test-3.2.3.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="jcl-over-slf4j-1.7.5" level="project" />
     <orderEntry type="library" scope="TEST" name="spock-spring-0.7-groovy-2.0" level="project" />
     <orderEntry type="library" exported="" name="cloudfoundry-runtime-0.8.3" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="json-smart-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="spring-beans-3.2.3.RELEASE" level="project" />
-    <orderEntry type="library" exported="" name="spring-hateoas-0.5.0.RELEASE" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="log4j-over-slf4j-1.7.5" level="project" />
     <orderEntry type="library" exported="" name="spring-plugin-core-0.8.0.RELEASE" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="jackson-core-2.2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="junit-4.11" level="project" />
   </component>
 </module>
 

@@ -58,12 +58,11 @@ repositories {
     }
 }
 
-configurations {
-    all*.exclude group: 'commons-logging'
-    all*.exclude group: 'log4j'
-    all*.exclude group: 'slf4j'
-    all*.exclude group: 'junit'
-    all*.exclude group: 'org.hamcrest'
+configurations.all {
+    exclude group: 'commons-logging'
+    exclude group: 'log4j'
+    exclude module: 'junit-dep'
+    exclude group: 'org.hamcrest'
 }
 
 dependencies {
@@ -74,7 +73,6 @@ dependencies {
     compile "ch.qos.logback:logback-core:${logbackVersion}"
     compile "ch.qos.logback:logback-classic:${logbackVersion}"
     compile "org.springframework:spring-webmvc:${springFrameworkVersion}"
-    compile "org.springframework.hateoas:spring-hateoas:${springHateoasVersion}"
     compile "org.springframework.plugin:spring-plugin-core:${springPluginVersion}"
     compile "org.cloudfoundry:cloudfoundry-runtime:${cloudFoundryVersion}"
 
@@ -83,10 +81,8 @@ dependencies {
     runtime "org.slf4j:jul-to-slf4j:${slf4jVersion}"
     runtime "org.slf4j:log4j-over-slf4j:${slf4jVersion}"
     runtime "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
-    runtime "com.jayway.jsonpath:json-path:${jsonPathVersion}"
 
     testCompile"junit:junit:${junitVersion}"
-    testCompile "org.hamcrest:hamcrest-all:${hamcrestVersion}"
     testCompile "org.spockframework:spock-core:${spockVersion}"
     testCompile "org.spockframework:spock-spring:${spockVersion}"
     testCompile "org.springframework:spring-test:${springFrameworkVersion}"

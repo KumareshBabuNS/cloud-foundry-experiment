@@ -20,7 +20,6 @@ package org.kurron.spring
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
 import org.springframework.context.annotation.ImportResource
-import org.springframework.hateoas.config.EnableHypermediaSupport
 import org.springframework.http.MediaType
 import org.springframework.web.servlet.config.annotation.ContentNegotiationConfigurer
 import org.springframework.web.servlet.config.annotation.EnableWebMvc
@@ -31,7 +30,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  */
 @Configuration
 @EnableWebMvc
-@EnableHypermediaSupport
 @ComponentScan( basePackages = ['org.kurron.root'] )
 @ImportResource( 'classpath:META-INF/spring/application-context.xml' )
 class ApplicationContext extends WebMvcConfigurationSupport {

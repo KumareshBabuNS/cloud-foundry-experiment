@@ -16,14 +16,13 @@
 
 package org.kurron.root
 
-import groovy.transform.TupleConstructor
+import groovy.transform.Canonical
 import org.springframework.beans.factory.annotation.Value
-import org.springframework.hateoas.Identifiable
 
 /**
  * Model of the runtime environment.
  */
-@TupleConstructor
+@Canonical
 class Environment {
 
     @Value('${cloud.application.name}')
