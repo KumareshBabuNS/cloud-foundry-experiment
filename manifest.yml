@@ -1,0 +1,8 @@
+---
+applications:
+- name: cloud-foundry-experiment
+  memory: 256M
+  instances: 1
+  host: cloud-foundry-experiment
+  domain: cfapps.io
+  path: build/libs/cloud-foundr-experiment.war
