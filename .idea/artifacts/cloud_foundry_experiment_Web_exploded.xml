@@ -9,32 +9,32 @@
           <element id="module-output" name="cloud-foundry-experiment" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="json-path-0.8.1" />
-          <element id="library" level="project" name="spring-beans-3.2.3.RELEASE" />
-          <element id="library" level="project" name="slf4j-ext-1.7.5" />
-          <element id="library" level="project" name="log4j-over-slf4j-1.7.5" />
-          <element id="library" level="project" name="json-smart-1.1.1" />
-          <element id="library" level="project" name="jackson-core-2.2.1" />
-          <element id="library" level="project" name="jackson-annotations-2.2.1" />
-          <element id="library" level="project" name="cloudfoundry-runtime-0.8.3" />
-          <element id="library" level="project" name="jcl-over-slf4j-1.7.5" />
           <element id="library" level="project" name="jul-to-slf4j-1.7.5" />
-          <element id="library" level="project" name="slf4j-api-1.7.5" />
-          <element id="library" level="project" name="groovy-all-2.1.4" />
+          <element id="library" level="project" name="slf4j-ext-1.7.5" />
+          <element id="library" level="project" name="json-path-0.8.1" />
           <element id="library" level="project" name="logback-classic-1.0.12" />
-          <element id="library" level="project" name="spring-expression-3.2.3.RELEASE" />
-          <element id="library" level="project" name="spring-web-3.2.3.RELEASE" />
-          <element id="library" level="project" name="spring-context-3.2.3.RELEASE" />
-          <element id="library" level="project" name="spring-aop-3.2.3.RELEASE" />
-          <element id="library" level="project" name="commons-lang-2.6" />
-          <element id="library" level="project" name="spring-webmvc-3.2.3.RELEASE" />
+          <element id="library" level="project" name="jackson-annotations-2.2.1" />
           <element id="library" level="project" name="spring-core-3.2.3.RELEASE" />
           <element id="library" level="project" name="jackson-databind-2.2.1" />
-          <element id="library" level="project" name="spring-hateoas-0.5.0.RELEASE" />
-          <element id="library" level="project" name="aopalliance-1.0" />
+          <element id="library" level="project" name="spring-webmvc-3.2.3.RELEASE" />
+          <element id="library" level="project" name="spring-expression-3.2.3.RELEASE" />
           <element id="library" level="project" name="logback-core-1.0.12" />
+          <element id="library" level="project" name="spring-context-3.2.3.RELEASE" />
+          <element id="library" level="project" name="spring-aop-3.2.3.RELEASE" />
+          <element id="library" level="project" name="spring-web-3.2.3.RELEASE" />
+          <element id="library" level="project" name="groovy-all-2.1.4" />
+          <element id="library" level="project" name="slf4j-api-1.7.5" />
+          <element id="library" level="project" name="commons-lang-2.6" />
+          <element id="library" level="project" name="aopalliance-1.0" />
           <element id="library" level="project" name="cal10n-api-0.7.4" />
+          <element id="library" level="project" name="jcl-over-slf4j-1.7.5" />
+          <element id="library" level="project" name="cloudfoundry-runtime-0.8.3" />
+          <element id="library" level="project" name="json-smart-1.1.1" />
+          <element id="library" level="project" name="spring-beans-3.2.3.RELEASE" />
+          <element id="library" level="project" name="spring-hateoas-0.5.0.RELEASE" />
+          <element id="library" level="project" name="log4j-over-slf4j-1.7.5" />
           <element id="library" level="project" name="spring-plugin-core-0.8.0.RELEASE" />
+          <element id="library" level="project" name="jackson-core-2.2.1" />
         </element>
       </element>
     </root>
