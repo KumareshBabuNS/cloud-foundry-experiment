@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="spring-service-connector-0.9.2-BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.cloud/spring-service-connector/0.9.2-BUILD-SNAPSHOT/jar/7a19b8b2013dda0413a585b698c96b9bb2ef139c/spring-service-connector-0.9.2-BUILD-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.cloud/spring-service-connector/0.9.2-BUILD-SNAPSHOT/source/cfe6125c1242c5ad7a6aa06102ec0f8f75cacc9f/spring-service-connector-0.9.2-BUILD-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

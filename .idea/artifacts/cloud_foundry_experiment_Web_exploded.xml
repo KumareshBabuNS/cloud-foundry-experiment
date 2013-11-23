@@ -31,6 +31,9 @@
           <element id="library" level="project" name="spring-expression-3.2.5.RELEASE" />
           <element id="library" level="project" name="spring-core-3.2.5.RELEASE" />
           <element id="library" level="project" name="spring-context-3.2.5.RELEASE" />
+          <element id="library" level="project" name="core-0.9.2-BUILD-SNAPSHOT" />
+          <element id="library" level="project" name="cloudfoundry-connector-0.9.2-BUILD-SNAPSHOT" />
+          <element id="library" level="project" name="spring-service-connector-0.9.2-BUILD-SNAPSHOT" />
         </element>
       </element>
     </root>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="core-0.9.2-BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.cloud/core/0.9.2-BUILD-SNAPSHOT/jar/3fa56baa7cfce1cfce2a1a9a5369f9735e4ba1f7/core-0.9.2-BUILD-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/artifacts-26/filestore/org.springframework.cloud/core/0.9.2-BUILD-SNAPSHOT/source/c73d62a24dd27390e78c872b4e3506f04a3cdc59/core-0.9.2-BUILD-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

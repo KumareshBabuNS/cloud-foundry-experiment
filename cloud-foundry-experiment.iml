@@ -59,6 +59,9 @@
     <orderEntry type="library" exported="" name="spring-expression-3.2.5.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="spring-core-3.2.5.RELEASE" level="project" />
     <orderEntry type="library" exported="" name="spring-context-3.2.5.RELEASE" level="project" />
+    <orderEntry type="library" exported="" name="core-0.9.2-BUILD-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="cloudfoundry-connector-0.9.2-BUILD-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="spring-service-connector-0.9.2-BUILD-SNAPSHOT" level="project" />
   </component>
 </module>
 
